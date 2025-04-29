@@ -27,21 +27,25 @@ cd fullstack-chat-app/frontend
 Install core libraries:
 
 Install Tailwind CSS and PostCSS:
+```bash
 npm install -D tailwindcss postcss autoprefixer npx tailwindcss init -p
-
+```
 ---
 
 ## 🎨 Tailwind CSS Configuration
 
 ### 1. Update `tailwind.config.js`
-module.exports = { content: [ "./src/**/*.{js,jsx,ts,tsx}", ], theme: { extend: {}, }, plugins: [], }
 
+```
+module.exports = { content: [ "./src/**/*.{js,jsx,ts,tsx}", ], theme: { extend: {}, }, plugins: [], }
+```
 
 ### 2. Add Tailwind Directives to CSS
 
 In `src/index.css` or `src/App.css`, add the following:
-
+```
 @tailwind base; @tailwind components; @tailwind utilities;
+```
 
 ```
 Ensure the CSS file is imported in `src/index.js`:
@@ -52,13 +56,13 @@ Ensure the CSS file is imported in `src/index.js`:
 ## 🌐 Axios Setup
 
 Create a file at `src/api/axios.js` and add:
-
+```bash
 import axios from 'axios';
 
 const api = axios.create({ baseURL: 'http://localhost:5001/api', // Change this to your backend URL withCredentials: true, });
 
 export default api;
-
+```
 ---
 
 ## 🔌 Socket.IO Client Setup
