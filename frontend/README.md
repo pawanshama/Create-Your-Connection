@@ -9,6 +9,8 @@ This README provides a step-by-step guide to setting up the frontend part of the
 - React.js
 - Zustand (state management)
 - Tailwind CSS + PostCSS (styling)
+- lucide-react
+- react-hot-toast
 - Axios (HTTP requests)
 - Socket.IO Client (real-time messaging)
 
